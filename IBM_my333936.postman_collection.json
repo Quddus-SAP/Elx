@@ -1,0 +1,217 @@
+{
+	"info": {
+		"_postman_id": "bf275e3c-53c7-44f7-8c20-f98e5a99ce6c",
+		"name": "IBM_my333936",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13728733"
+	},
+	"item": [
+		{
+			"name": "metadata",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "India@12345",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "_C4C_OData",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://my333936.crm.ondemand.com/sap/c4c/odata/v1/ticket/$metadata",
+					"protocol": "https",
+					"host": [
+						"my333936",
+						"crm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"sap",
+						"c4c",
+						"odata",
+						"v1",
+						"ticket",
+						"$metadata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticket",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "India@12345",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "_C4C_OData",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://my333936.crm.ondemand.com/sap/c4c/odata/v1/ticket/ServiceRequestCollection?$filter=ID eq '8022'",
+					"protocol": "https",
+					"host": [
+						"my333936",
+						"crm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"sap",
+						"c4c",
+						"odata",
+						"v1",
+						"ticket",
+						"ServiceRequestCollection"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "ID eq '8022'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticket",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "India@12345",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "_C4C_OData",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ProcessingTypeCode\": \"SRRQ\",\r\n    \"Name\": \"Testing from postman\",\r\n    \"SerialID\": \"12324567\",\r\n    \"ProductID\": \"LE_TP_01\",\r\n    \"ServiceRequestUserLifeCycleStatusCode\": \"Z6\",\r\n    \"BuyerPartyID\": \"1001451\",\r\n    \"LX_PRD_CH1_KUT\": \"500\",\r\n    \"LX_TKT_EXW_PRV_KUT\": \"121\"\r\n}"
+				},
+				"url": {
+					"raw": "https://my333936.crm.ondemand.com/sap/c4c/odata/v1/ticket/ServiceRequestCollection",
+					"protocol": "https",
+					"host": [
+						"my333936",
+						"crm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"sap",
+						"c4c",
+						"odata",
+						"v1",
+						"ticket",
+						"ServiceRequestCollection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticket",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "India@12345",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "_C4C_OData",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TicketOwnedBy_KUT\":\"121\"\r\n}"
+				},
+				"url": {
+					"raw": "https://my333936.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('4D76303D62DB1EDDBBFC91C0FFC5193B')",
+					"protocol": "https",
+					"host": [
+						"my333936",
+						"crm",
+						"ondemand",
+						"com"
+					],
+					"path": [
+						"sap",
+						"c4c",
+						"odata",
+						"cust",
+						"v1",
+						"srvtkt",
+						"ServiceRequestCollection('4D76303D62DB1EDDBBFC91C0FFC5193B')"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

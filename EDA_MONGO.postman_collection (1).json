@@ -1,0 +1,1046 @@
+{
+	"info": {
+		"_postman_id": "660618ed-1b4d-4434-8a4d-5a88534b6b89",
+		"name": "EDA_MONGO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13728733"
+	},
+	"item": [
+		{
+			"name": "WF4_OR",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ProcessingTypeCode\": \"ZSRR\",\r\n    \"Name\": \"WF4 + O.R Test 1\",\r\n    \"DataOriginTypeCode\": \"1\",\r\n    \"SerialID\": \"2020_1828019\",\r\n    \"ServiceRequestUserLifeCycleStatusCode\": \"1\",\r\n    \"BuyerPartyID\": \"1650544\",\r\n    \"ServiceIssueCategoryID\": \"1\",\r\n    \"LX_PRD_CH1_KUT\": \"500\",\r\n    \"LX_TCK_CVRG\": \"ZP\",\r\n    \"LX_TCK_TECHID_KUT\": \"12345\",\r\n    \"LX_TKT_ISPTYP\": \"111\",\r\n    \"ResolutionCode\": \"121\",\r\n    \"LX_TCK_BAC_KUT\": \"12345\",\r\n    \"LX_TCK_BKY_KUT\": \"12345\",\r\n    \"LX_TCK_EScontent\": \"26000\",\r\n    \"LX_TCK_EScurrencyCode\": \"EUR\",\r\n    \"LX_TKT_NEX_REFAMTContent_KUT\": \"30000\",\r\n    \"LX_TKT_NEX_REFAMTcurrencyCode_KUT\": \"EUR\",\r\n    \"TotalContent_KUT\": \"30000\",\r\n    \"TotalcurrencyCode_KUT\": \"EUR\",\r\n    \"LX_TCK_CE\": \"101\",\r\n    \"DivisionCode\": \"03\",\r\n    \"DistributionChannelCode\": \"C3\",\r\n    \"LX_TKT_EXW_PRV_KUT\": \"\",\r\n    \"ServiceRequestItem\": [\r\n        {\r\n            \"ProductID\": \"30010\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"ProductID\": \"30014\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"UserServiceTransactionProcessingTypeCode\": \"ZPAR\",\r\n            \"ProductID\": \"1801611411\",\r\n            \"WarrantyGoodwillCode\": \"ZZ\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/v1/ticket/ServiceRequestCollection",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"v1",
+								"ticket",
+								"ServiceRequestCollection"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"LX_TKT_NEX_PSTATUS_KUT\": \"03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('F743900474571EDDBBE4F9ECF78CA17D')",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('F743900474571EDDBBE4F9ECF78CA17D')"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ItemListExternalFollowUpProcessingReleaseStatusCode\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')?$expand=ServiceRequestItem",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "ServiceRequestItem"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WF1_6_7",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ProcessingTypeCode\": \"ZSRR\",\r\n    \"Name\": \"WF1_2_6 Test Case1\",\r\n    \"DataOriginTypeCode\": \"1\",\r\n    \"SerialID\": \"2022_2255153\",\r\n    \"ServiceRequestUserLifeCycleStatusCode\": \"Z6\",\r\n    \"BuyerPartyID\": \"5884433\",\r\n    \"ServiceIssueCategoryID\": \"1\",\r\n    \"LX_PRD_CH1_KUT\": \"500\",\r\n    \"LX_TCK_CVRG\": \"ZZ\",\r\n    \"LX_TCK_TECHID_KUT\": \"12345\",\r\n    \"LX_TKT_ISPTYP\": \"111\",\r\n    \"ResolutionCode\": \"121\",\r\n    \"LX_TCK_BAC_KUT\": \"12345\",\r\n    \"LX_TCK_BKY_KUT\": \"12345\",\r\n    \"LX_TCK_EScontent\": \"26000\",\r\n    \"LX_TCK_EScurrencyCode\": \"EUR\",\r\n    \"LX_TCK_CE\": \"101\",\r\n    \"DivisionCode\": \"03\",\r\n    \"DistributionChannelCode\": \"C3\",\r\n    \"LX_TKT_EXW_PRV_KUT\": \"151\",\r\n    \"ServiceRequestItem\": [\r\n        {\r\n            \"ProductID\": \"30010\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"ProductID\": \"30014\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"UserServiceTransactionProcessingTypeCode\": \"ZPAR\",\r\n            \"ProductID\": \"1801611411\",\r\n            \"WarrantyGoodwillCode\": \"ZZ\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/v1/ticket/ServiceRequestCollection",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"v1",
+								"ticket",
+								"ServiceRequestCollection"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"LX_TKT_BO_KUT\": true,\r\n    \"ItemListServiceRequestExecutionLifeCycleStatusCode\": \"6\",\r\n    \"LX_TKT_CLMSTS_KUT\": \"Z3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('AF3BF6753E371EEDBBE5157ABDA0E453')",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('AF3BF6753E371EEDBBE5157ABDA0E453')"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ItemListExternalFollowUpProcessingReleaseStatusCode\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')?$expand=ServiceRequestItem",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "ServiceRequestItem"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WF2_6_7",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"ProcessingTypeCode\": \"ZSRR\",\r\n\t\"Name\": \"WF2+WF6+WF7 Test Case 1\",\r\n\t\"DataOriginTypeCode\": \"1\",\r\n    \"SerialID\": \"2022_2255153\",\r\n    \"ServiceRequestUserLifeCycleStatusCode\": \"Z6\",\r\n    \"BuyerPartyID\": \"5884433\",\r\n    \"ServiceIssueCategoryID\": \"1\",\r\n    \"LX_PRD_CH1_KUT\": \"500\",\r\n    \"LX_TCK_CVRG\": \"ZZ\",\r\n    \"LX_TCK_TECHID_KUT\": \"12345\",\r\n    \"LX_TKT_ISPTYP\": \"111\",\r\n    \"ResolutionCode\": \"121\",\r\n    \"LX_TCK_BAC_KUT\": \"12345\",\r\n    \"LX_TCK_BKY_KUT\": \"12345\",\r\n    \"LX_TCK_EScontent\": \"26000\",\r\n    \"LX_TCK_EScurrencyCode\": \"EUR\",\r\n    \"LX_TCK_CE\": \"101\",\r\n    \"DivisionCode\": \"03\",\r\n    \"DistributionChannelCode\": \"C3\",\r\n    \"LX_TKT_EXW_PRV_KUT\": \"\",\r\n    \"ServiceRequestItem\": [\r\n        {\r\n            \"ProductID\": \"30010\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"ProductID\": \"30014\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"UserServiceTransactionProcessingTypeCode\": \"ZPAR\",\r\n            \"ProductID\": \"1801611411\",\r\n            \"WarrantyGoodwillCode\": \"ZZ\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/v1/ticket/ServiceRequestCollection",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"v1",
+								"ticket",
+								"ServiceRequestCollection"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"LX_TKT_BO_KUT\": true,\r\n    \"ItemListServiceRequestExecutionLifeCycleStatusCode\": \"6\",\r\n    \"LX_TKT_CLMSTS_KUT\": \"Z3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('F743900474571EDDBBE533B5529DA3E9')",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('F743900474571EDDBBE533B5529DA3E9')"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ItemListExternalFollowUpProcessingReleaseStatusCode\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')?$expand=ServiceRequestItem",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "ServiceRequestItem"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WF1_6_7_OR",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ProcessingTypeCode\": \"ZSRR\",\r\n    \"Name\": \"1,6,7,OR Test case 1\",\r\n    \"DataOriginTypeCode\": \"1\",\r\n    \"SerialID\": \"2022_2255153\",\r\n    \"ServiceRequestUserLifeCycleStatusCode\": \"Z6\",\r\n    \"BuyerPartyID\": \"5884433\",\r\n    \"ServiceIssueCategoryID\": \"1\",\r\n    \"LX_PRD_CH1_KUT\": \"500\",\r\n    \"LX_TCK_CVRG\": \"ZZ\",\r\n    \"LX_TCK_TECHID_KUT\": \"12345\",\r\n    \"LX_TKT_ISPTYP\": \"111\",\r\n    \"ResolutionCode\": \"121\",\r\n    \"LX_TCK_BAC_KUT\": \"12345\",\r\n    \"LX_TCK_BKY_KUT\": \"12345\",\r\n    \"LX_TCK_EScontent\": \"26000\",\r\n    \"LX_TCK_EScurrencyCode\": \"EUR\",\r\n    \"LX_TKT_NEX_REFAMTContent_KUT\": \"30000\",\r\n    \"LX_TKT_NEX_REFAMTcurrencyCode_KUT\": \"EUR\",\r\n    \"TotalContent_KUT\": \"30000\",\r\n    \"TotalcurrencyCode_KUT\": \"EUR\",\r\n    \"LX_TCK_CE\": \"101\",\r\n    \"DivisionCode\": \"03\",\r\n    \"DistributionChannelCode\": \"C3\",\r\n    \"LX_TKT_EXW_PRV_KUT\": \"151\",\r\n    \"ServiceRequestItem\": [\r\n        {\r\n            \"ProductID\": \"30010\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"ProductID\": \"30014\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"UserServiceTransactionProcessingTypeCode\": \"ZPAR\",\r\n            \"ProductID\": \"1801611411\",\r\n            \"WarrantyGoodwillCode\": \"ZZ\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/v1/ticket/ServiceRequestCollection",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"v1",
+								"ticket",
+								"ServiceRequestCollection"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WF6 PATCH",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"LX_TKT_BO_KUT\": true,\r\n    \"ItemListServiceRequestExecutionLifeCycleStatusCode\": \"6\",\r\n    \"LX_TKT_NEX_PSTATUS_KUT\": \"03\",\r\n    \"LX_TKT_CLMSTS_KUT\": \"Z3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('957410F777201EDDBBE56285BB03B96C')",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('957410F777201EDDBBE56285BB03B96C')"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WF6 GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ItemListExternalFollowUpProcessingReleaseStatusCode\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')?$expand=ServiceRequestItem",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "ServiceRequestItem"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WF2_6_7_OR",
+			"item": [
+				{
+					"name": "POST",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ProcessingTypeCode\": \"ZSRR\",\r\n    \"Name\": \"2,6,7,Or test case 1\",\r\n    \"DataOriginTypeCode\": \"1\",\r\n    \"SerialID\": \"2022_2255153\",\r\n    \"ServiceRequestUserLifeCycleStatusCode\": \"Z6\",\r\n    \"BuyerPartyID\": \"5884433\",\r\n    \"ServiceIssueCategoryID\": \"1\",\r\n    \"LX_PRD_CH1_KUT\": \"500\",\r\n    \"LX_TCK_CVRG\": \"ZZ\",\r\n    \"LX_TCK_TECHID_KUT\": \"12345\",\r\n    \"LX_TKT_ISPTYP\": \"111\",\r\n    \"ResolutionCode\": \"121\",\r\n    \"LX_TCK_BAC_KUT\": \"12345\",\r\n    \"LX_TCK_BKY_KUT\": \"12345\",\r\n    \"LX_TCK_EScontent\": \"26000\",\r\n    \"LX_TCK_EScurrencyCode\": \"EUR\",\r\n    \"LX_TKT_NEX_REFAMTContent_KUT\": \"30000\",\r\n    \"LX_TKT_NEX_REFAMTcurrencyCode_KUT\": \"EUR\",\r\n    \"TotalContent_KUT\": \"30000\",\r\n    \"TotalcurrencyCode_KUT\": \"EUR\",\r\n    \"LX_TCK_CE\": \"101\",\r\n    \"DivisionCode\": \"03\",\r\n    \"DistributionChannelCode\": \"C3\",\r\n    \"LX_TKT_EXW_PRV_KUT\": \"\",\r\n    \"ServiceRequestItem\": [\r\n        {\r\n            \"ProductID\": \"30010\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"ProductID\": \"30014\",\r\n            \"PlannedQuantity\": \"1.00000000000000\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        },\r\n        {\r\n            \"UserServiceTransactionProcessingTypeCode\": \"ZPAR\",\r\n            \"ProductID\": \"1801611411\",\r\n            \"WarrantyGoodwillCode\": \"ZZ\",\r\n            \"ServiceRequestExecutionLifeCycleStatusCode\": \"6\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/v1/ticket/ServiceRequestCollection",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"v1",
+								"ticket",
+								"ServiceRequestCollection"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"LX_TKT_BO_KUT\": true,\r\n    \"ItemListServiceRequestExecutionLifeCycleStatusCode\": \"6\",\r\n    \"LX_TKT_NEX_PSTATUS_KUT\": \"03\",\r\n    \"LX_TKT_CLMSTS_KUT\": \"Z3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('472CF28EEF011EDDBBE56E045DE47A74')",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('472CF28EEF011EDDBBE56E045DE47A74')"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ItemListExternalFollowUpProcessingReleaseStatusCode\": \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')?$expand=ServiceRequestItem",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection('0298493419E81EDD96D570A670DFB271')"
+							],
+							"query": [
+								{
+									"key": "$expand",
+									"value": "ServiceRequestItem"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TEST Data",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/cust/v1/srvtkt/ServiceRequestCollection?$filter=TicketID eq '101262549'&$expand=ServiceRequestItem,ServiceRequestUsedAddress",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"cust",
+								"v1",
+								"srvtkt",
+								"ServiceRequestCollection"
+							],
+							"query": [
+								{
+									"key": "$filter",
+									"value": "TicketID eq '101262549'"
+								},
+								{
+									"key": "$expand",
+									"value": "ServiceRequestItem,ServiceRequestUsedAddress"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Elx@12345",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "_R2D2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://my338453.crm.ondemand.com/sap/c4c/odata/v1/ticket/ServiceRequestCollection?$top=1",
+							"protocol": "https",
+							"host": [
+								"my338453",
+								"crm",
+								"ondemand",
+								"com"
+							],
+							"path": [
+								"sap",
+								"c4c",
+								"odata",
+								"v1",
+								"ticket",
+								"ServiceRequestCollection"
+							],
+							"query": [
+								{
+									"key": "$top",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
